@@ -1,0 +1,42 @@
+{
+  "cases":[
+    {
+      "nameClass": "TC_ConsultaCarregamento",
+      "name": "Lista os carregamentos",
+      "description": "Deve listar todos os carregametnos criados no sistema",
+      "steps": [
+        {
+          "description": "Consulta os Carregamentos",
+          "commands":[
+            {
+              "comand": "GET",
+              "findBy": "",
+              "target": "carregamentos/pesquisar?campoOrdenacao=dataMontagem&tamanhoPagina=10&indicePrimeiroRegistroPagina=0&tipoOrdenacao=asc",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nameClass": "TC_ConsultaPainelBaixaDeFrete",
+      "name": "Painel de baixa de frete",
+      "description": "Lista fretes cadastrados",
+      "steps": [
+        {
+          "description": "Painel de baixa de Frete",
+          "commands":[
+            {
+              "comand": "GET",
+              "findBy": "",
+              "target": "painelBaixaCarregamento/listarCarregamentosNaoBaixados?campoOrdenacao=id&tamanhoPagina=10&indicePrimeiroRegistroPagina=0&tipoOrdenacao=asc&",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

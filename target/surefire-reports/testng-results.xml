@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="493" started-at="2020-10-19T22:49:09Z" finished-at="2020-10-19T22:49:10Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="493" started-at="2020-10-19T22:49:09Z" finished-at="2020-10-19T22:49:10Z">
+      <class name="util.ExecutarAutomacao">
+        <test-method status="PASS" signature="jonnas(java.lang.String)[pri:0, instance:util.ExecutarAutomacao@2d36e77e]" name="jonnas" duration-ms="180" started-at="2020-10-19T22:49:09Z" finished-at="2020-10-19T22:49:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[padrao]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jonnas -->
+      </class> <!-- util.ExecutarAutomacao -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

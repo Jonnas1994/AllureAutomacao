@@ -1,0 +1,1 @@
+{"uuid":"6568dec9-1e47-46f2-8dbb-9a34dea8e482","name":"testCases.Rotas.InicializaTeste","description":"","start":1603807993579,"stop":1603807993809,"children":["cc1b1b0b-ec85-41b2-a0dc-718d7ef4623f"],"befores":[{"name":"InicializaTeste","status":"passed","stage":"finished","description":"","start":1603807993581,"stop":1603807993808}]}

@@ -1,0 +1,47 @@
+.screen-diff__switchers {
+  margin-bottom: 1em;
+}
+
+.screen-diff__switchers label + label {
+  margin-left: 1em;
+}
+
+.screen-diff__overlay {
+  position: relative;
+  cursor: col-resize;
+}
+
+.screen-diff__container {
+  overflow-x: auto;
+}
+
+.screen-diff__image-over {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 2px 0 1px -1px #aaa;
+}
+
+.side-nav__brand {
+  background: url('roteirizador.png') no-repeat left center !important;
+  margin-left: 10px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.side-nav__brand-text {
+  visibility: hidden;
+position: relative;
+}
+.side-nav__brand-text:after {
+  content: 'Logística';
+  visibility: visible;
+	position: absolute;
+	margin-left: -59%;
+}
+
+
+

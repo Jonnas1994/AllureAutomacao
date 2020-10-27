@@ -1,0 +1,653 @@
+{
+  "cases":[
+    {
+      "nameClass": "TC_Editar",
+      "name": "Edição de Centro de Distribuição",
+      "description": "Deve realizar a edição de um centro de distribuição",
+      "steps": [
+        {
+          "description": "Acessar o menu",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//a[@id='m_aside_left_minimize_toggle']",
+              "value": "",
+              "subComand": null
+            },
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(.,'Cadastros')]",
+              "value": "",
+              "subComand": null
+            },
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(.,'Centro de Distribuição')]",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Clicar menu editar cadastro",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "css",
+              "target": "button[Id^='botao-acao1']",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Digita descrição",
+          "commands":[
+            {
+              "comand": "sendKeys",
+              "findBy": "css",
+              "target": "input[Id^='nome'][placeholder='Nome']",
+              "value": "EDITADO - 01",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Digita logradouro",
+          "commands":[
+            {
+              "comand": "sendKeys",
+              "findBy": "css",
+              "target": "input[Id^='logradouro'][placeholder='Logradouro']",
+              "value": "Quadra Onze",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Digita bairro",
+          "commands":[
+            {
+              "comand": "sendKeys",
+              "findBy": "css",
+              "target": "input[Id^='bairro'][placeholder='Bairro']",
+              "value": "Mangueirão",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Seleciona estado",
+          "commands":[
+            {
+              "comand": "comboPesquisa",
+              "findBy": "css",
+              "target": "#estadoListar .mat-select-arrow",
+              "value": "",
+              "subComand": [
+                {
+                  "description": "Busca o controle de combobox",
+                  "comand": "mouseMove",
+                  "findBy": "",
+                  "target": "",
+                  "value": ""
+                },
+                {
+                  "description": "Seleciona o estado",
+                  "comand": "click",
+                  "findBy": "xpath",
+                  "target": "//div[contains(text(),'PE')]",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Seleciona cidade",
+          "commands":[
+            {
+              "comand": "comboPesquisa",
+              "findBy": "css",
+              "target": "#cidadeListar .mat-select-arrow",
+              "value": "",
+              "subComand": [
+                {
+                  "description": "Busca o controle de combobox",
+                  "comand": "mouseMove",
+                  "findBy": "",
+                  "target": "",
+                  "value": ""
+                },
+                {
+                  "description": "Seleciona a cidade",
+                  "comand": "click",
+                  "findBy": "xpath",
+                  "target": "//div[contains(text(),'BETANIA')]",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Digita cep",
+          "commands":[
+            {
+              "comand": "sendKeys",
+              "findBy": "css",
+              "target": "input[Id^='cep'][placeholder='CEP']",
+              "value": "66640560",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Clica botão coordenadas",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "css",
+              "target": "button[class='mat-flat-button mat-primary']",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Clica botão salvar",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "css",
+              "target": "button[class='mx-fab-novo mat-flat-button mat-primary']",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Verifica Alteração",
+          "commands":[
+            {
+              "comand": "assertEquals_text",
+              "findBy": "xpath",
+              "target": "//div[@id='toastMessage + i']",
+              "value": "Item atualizado com sucesso!",
+              "subComand": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nameClass": "TC_Cadastrar",
+      "name": "Cadastro de um contato",
+      "description": "Deve ser possivel cadastrar um novo contato",
+      "steps": [
+        {
+          "description": "Acessar o menu",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//a[@id='m_aside_left_minimize_toggle']",
+              "value": "",
+              "subComand": null
+            },
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(.,'Cadastros')]",
+              "value": "",
+              "subComand": null
+            },
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[@class='m-menu__link-text ng-star-inserted'][contains(text(),'Contatos')]",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Clica em cadastrar",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//button[@id='btn-novo']",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Informa o Nome",
+          "commands":[
+            {
+              "comand": "sendKeys",
+              "findBy": "xpath",
+              "target": "//input[@id='nome']",
+              "value": "CONTATO - Allure",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Informa o telefone",
+          "commands":[
+            {
+              "comand": "sendKeys",
+              "findBy": "xpath",
+              "target": "//input[@id='telefone']",
+              "value": "TESTE Cad - Allure",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Digita o logradouro",
+          "commands":[
+            {
+              "comand": "sendKeys",
+              "findBy": "xpath",
+              "target": "//input[@id='logradouro']",
+              "value": "Rua x 45",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Digita o bairro",
+          "commands":[
+            {
+              "comand": "sendKeys",
+              "findBy": "xpath",
+              "target": "//input[@id='bairro']",
+              "value": "Parque atheneu",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Seleciona estado",
+          "commands":[
+            {
+              "comand": "comboPesquisa",
+              "findBy": "css",
+              "target": "#estadoListar .mat-select-arrow",
+              "value": "",
+              "subComand": [
+                {
+                  "description": "Busca o controle de combobox",
+                  "comand": "mouseMove",
+                  "findBy": "",
+                  "target": "",
+                  "value": ""
+                },
+                {
+                  "description": "Seleciona opção",
+                  "comand": "click",
+                  "findBy": "xpath",
+                  "target": "//div[contains(text(),'PA')]",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Seleciona cidade",
+          "commands":[
+            {
+              "comand": "comboPesquisa",
+              "findBy": "css",
+              "target": "#cidadeListar .mat-select-arrow",
+              "value": "",
+              "subComand": [
+                {
+                  "description": "Busca o controle de combobox",
+                  "comand": "mouseMove",
+                  "findBy": "",
+                  "target": "",
+                  "value": ""
+                },
+                {
+                  "description": "Seleciona a cidade",
+                  "comand": "click",
+                  "findBy": "xpath",
+                  "target": "//div[contains(text(),'BRAGANCA')]",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Digita o CEP",
+          "commands":[
+            {
+              "comand": "sendKeys",
+              "findBy": "xpath",
+              "target": "//input[@id='cep']",
+              "value": "74330150",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Clica para gerar coordenadas",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(text(),'Coordenadas')]",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Clica para salvar",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(text(),'Salvar centro')]",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Verifica Cadastro",
+          "commands":[
+            {
+              "comand": "assertEquals_text",
+              "findBy": "xpath",
+              "target": "//div[@id='toastMessage + i']",
+              "value": "Item adicionado com sucesso!",
+              "subComand": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nameClass": "TC_Filtro",
+      "name": "Filtra o Centro de Distribuição",
+      "description": "Deve ser possivel consultar o Centro de distribuição cadastrado",
+      "steps": [
+        {
+          "description": "Acessar o menu",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//a[@id='m_aside_left_minimize_toggle']",
+              "value": "",
+              "subComand": null
+            },
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(.,'Cadastros')]",
+              "value": "",
+              "subComand": null
+            },
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(.,'Centro de Distribuição')]",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Abre o menu de filtro",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//mx-portlet-head[@id='filtro-avancado-filtro-visibilidade']//div[@class='m-portlet__head']",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Pesquisa pelo CD",
+          "commands":[
+            {
+              "comand": "sendKeys",
+              "findBy": "xpath",
+              "target": "//input[@id='nome']",
+              "value": "EDITADO",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Clica para pesquisar",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(text(),'Pesquisar')]",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Verifica se conseguiu localizar o CD",
+          "commands":[
+            {
+              "comand": "assertEquals_text",
+              "findBy": "xpath",
+              "target": "//span[contains(text(),'EDITADO - 01')]",
+              "value": "EDITADO - 01",
+              "subComand": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nameClass": "TC_Exclusão",
+      "name": "Exclusão do Centro de Distribuição",
+      "description": "Deve realizar a exclusão do Centro de distribuição",
+      "steps": [
+        {
+          "description": "Acessar o menu",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//a[@id='m_aside_left_minimize_toggle']",
+              "value": "",
+              "subComand": null
+            },
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(.,'Cadastros')]",
+              "value": "",
+              "subComand": null
+            },
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(.,'Centro de Distribuição')]",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Clica para deletar o CD",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "(//button[@id='botao-acao2']/span/em)[2]",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Confirma popup para excluir CD",
+          "commands":[
+            {
+              "comand": "wait_ElementToBeClickable",
+              "findBy": "xpath",
+              "target": "//span[contains(text(),'Tem certeza que deseja remover o centro de distrib')]",
+              "value": "",
+              "subComand": [
+                {
+                  "description": "Confirma exclusão",
+                  "comand": "click",
+                  "findBy": "xpath",
+                  "target": "//span[contains(text(),'SIM')]",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Verifica exclusão",
+          "commands":[
+            {
+              "comand": "assertEquals_text",
+              "findBy": "xpath",
+              "target": "//div[@id='toastMessage + i']",
+              "value": "Centro de distribuição removido com sucesso!",
+              "subComand": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nameClass": "TC_CamposObrigatorios",
+      "name": "Valida campos obrigatorios",
+      "description": "Deve verificar se todos os campos obrigatórios estão sendo validados",
+      "steps": [
+        {
+          "description": "Acessar o menu",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//a[@id='m_aside_left_minimize_toggle']",
+              "value": "",
+              "subComand": null
+            },
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(.,'Cadastros')]",
+              "value": "",
+              "subComand": null
+            },
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(.,'Centro de Distribuição')]",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Clica em cadastrar",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//button[@id='btn-novo']",
+              "value": "",
+              "subComand": null
+            }
+          ]
+        },
+        {
+          "description": "Verifica Campo Filial",
+          "commands":[
+            {
+              "comand": "click",
+              "findBy": "xpath",
+              "target": "//span[contains(text(),'Salvar centro')]",
+              "value": "",
+              "subComand": [
+                {
+                  "description": "Verifica se o campo é obrigatório",
+                  "comand": "assertEquals_text",
+                  "findBy": "xpath",
+                  "target": "//div[@id='toastMessage + i']",
+                  "value": "A filial é obrigatória!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Verifica Campo Nome",
+          "commands":[
+            {
+              "comand": "comboPesquisa",
+              "findBy": "css",
+              "target": "#filialListar .mat-select-arrow",
+              "value": "",
+              "subComand": [
+                {
+                  "description": "Busca o controle de combobox",
+                  "comand": "mouseMove",
+                  "findBy": "",
+                  "target": "",
+                  "value": ""
+                },
+                {
+                  "description": "Seleciona a opção",
+                  "comand": "click",
+                  "findBy": "xpath",
+                  "target": "//div[contains(text(),'MANAUS')]",
+                  "value": ""
+                },
+                {
+                  "description": "Clica para salvar",
+                  "comand": "click",
+                  "findBy": "xpath",
+                  "target": "//span[contains(text(),'Salvar centro')]",
+                  "value": ""
+                },
+                {
+                  "description": "Aguarda o popup da validação anterior fechar",
+                  "comand": "wait_time",
+                  "findBy": "",
+                  "target": "",
+                  "value": "5"
+                },
+                {
+                  "description": "Verifica obrigatoriedade do campo",
+                  "comand": "assertEquals_text",
+                  "findBy": "xpath",
+                  "target": "//div[@id='toastMessage + i']",
+                  "value": "O nome é obrigatório!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

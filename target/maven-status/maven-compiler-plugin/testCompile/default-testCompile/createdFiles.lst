@@ -1,0 +1,17 @@
+DTO\TestCase$Command.class
+testCases\CentroDeDistribuicao.class
+DTO\TestCase.class
+util\operator\Appium.class
+util\Configuracao$Environment.class
+util\AllureFunc.class
+DTO\TestCase$SubComand.class
+util\Configuracao.class
+util\Configuracao$mxWebDriver.class
+util\SystemFunc.class
+util\ExecutarAutomacao.class
+util\connector\Web.class
+util\operator\Selenium.class
+util\connector\Mobile.class
+DTO\TestCase$Step.class
+testCases\Contato.class
+DTO\TestCase$Case.class

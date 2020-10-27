@@ -1,0 +1,1 @@
+{"uuid":"5788bcc1-cdc7-4376-913f-cd69be81279b","name":"testCases.Rotas.tearDown","description":"","start":1603807874137,"stop":1603807874145,"children":["b64760fa-b1b9-47af-a661-6d0e2b59d8f8"],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","start":1603807874139,"stop":1603807874145}]}
